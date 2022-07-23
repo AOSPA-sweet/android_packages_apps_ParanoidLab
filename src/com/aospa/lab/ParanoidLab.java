@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.radiant.extras;
+package com.aospa.lab;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -29,18 +29,18 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class RadiantExtras extends SettingsPreferenceFragment {
+public class ParanoidLab extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.radiant_extras);
+        addPreferencesFromResource(R.xml.paranoid_lab);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.Radiant;
+        return MetricsProto.MetricsEvent.AOSPA;
     }
 
     public static void lockCurrentOrientation(Activity activity) {

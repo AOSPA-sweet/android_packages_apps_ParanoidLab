@@ -12,25 +12,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="radiant_extras_title">Personalizations</string>
+    <string name="paranoid_lab_title">Paranoid Lab</string>
 
     <!-- Categories -->
-    <string name="button_title">Buttons</string>
-    <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock screen</string>
     <string name="misc_title">Miscellaneous</string>
-    <string name="navbar_title">Navigation bar</string>
-    <string name="powermenu_title">Power menu</string>
     <string name="quicksettings_title">Quick Settings</string>
-    <string name="recents_title">Recents apps</string>
     <string name="statusbar_title">Status bar</string>
-    <string name="volume_title">Volume rockers</string>
-    <string name="notifications_title">Notifications</string>
-    <string name="themes_title">Themes</string>
-
-    <string name="show_fourg_icon_title">Show 4G instead of LTE</string>
-    <string name="show_fourg_icon_summary">Replace LTE indicator with 4G</string>
-    <string name="icons_category">Icons</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
