@@ -19,27 +19,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <!-- Network Traffic -->
-        <com.aospa.support.preferences.SystemSettingSwitchPreference
+        <com.aospa.support.preferences.SystemSettingMasterSwitchPreference
             android:key="network_traffic_state"
             android:title="@string/network_traffic_state_title"
             android:summary="@string/network_traffic_state_summary"
+            android:fragment="com.aospa.lab.fragments.NetworkTraffic"
             android:defaultValue="false" />
-            
-  <com.aosps.support.preferences.SystemSettingSwitchPreference
-            android:key="network_traffic_arrow"
-            android:title="@string/network_traffic_arrow_title"
-            android:summary="@string/network_traffic_arrow_summary"
-            android:defaultValue="true"
-            android:dependency="network_traffic_state" />          
-            
-   <com.aospa.support.preferences.SystemSettingSeekBarPreference
-            android:key="network_traffic_autohide_threshold"
-            android:title="@string/network_traffic_autohide_threshold_title"
-            android:max="10"
-            settings:min="0"
-            android:defaultValue="0"
-            settings:units="KB/s"
-            android:dependency="network_traffic_state" />         
 
     <com.aospa.support.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
