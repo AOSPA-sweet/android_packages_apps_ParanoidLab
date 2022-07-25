@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:settings="http://schemas.android.com/apk/res/res-auto"
     android:title="@string/paranoid_lab_title" >
 
      <Preference
@@ -38,6 +38,16 @@
             settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
             settings:layout="@layout/top_level_card"
             android:icon="@drawable/ic_settings_gestures"/>
+            
+  <Preference
+        android:key="gaming_category"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/game_space_title"
+        settings:layout="@layout/top_level_card" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="io.chaldeaprjkt.gamespace"
+                android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
 
    <Preference
           android:key="lockscreen_category"
