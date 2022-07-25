@@ -21,28 +21,36 @@
           android:key="statusbar_category"
           android:title="@string/statusbar_title" 
           android:fragment="com.aospa.lab.fragments.StatusBarSettings"
-	  settings:layout="@layout/top_level_card"
+	      settings:layout="@layout/top_level_card"
           android:icon="@drawable/ic_settings_statusbar"/>
           
   <Preference
           android:key="quicksettings_category"
           android:title="@string/quicksettings_title" 
           android:fragment="com.aospa.lab.fragments.QuickSettings"
-	  settings:layout="@layout/top_level_card"
+	      settings:layout="@layout/top_level_card"
           android:icon="@drawable/ic_settings_quicksettings"/>
+          
+  <Preference
+            android:key="gestures_category"
+            android:title="@string/gestures_title"
+            android:fragment="com.android.settings.gestures.GestureSettings"
+            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
+            settings:layout="@layout/top_level_card"
+            android:icon="@drawable/ic_settings_gestures"/>
 
    <Preference
           android:key="lockscreen_category"
           android:title="@string/lockscreen_title" 
           android:fragment="com.aospa.lab.fragments.LockScreenSettings"
-	  settings:layout="@layout/top_level_card"
+	      settings:layout="@layout/top_level_card"
           android:icon="@drawable/ic_settings_lockscreens"/>
           
     <Preference
           android:key="misc_category"
           android:title="@string/misc_title"
           android:fragment="com.aospa.lab.fragments.MiscSettings"
-	  settings:layout="@layout/top_level_card"
+	      settings:layout="@layout/top_level_card"
           android:icon="@drawable/ic_settings_miscs"/>      
 
 </PreferenceScreen>
