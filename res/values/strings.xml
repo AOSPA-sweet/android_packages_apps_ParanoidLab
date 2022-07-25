@@ -56,5 +56,11 @@
     <!-- Less boring heads up -->
     <string name="less_boring_heads_up_title">Saner Heads-Up</string>
     <string name="less_boring_heads_up_summary">Disable heads up for all apps except for dialer and messaging</string>
+    
+    <!-- Statusbar net monitor -->
+    <string name="statusbar_ntraffic">Network</string>
+    <string name="network_traffic_state_title">Network traffic</string>
+    <string name="network_traffic_state_summary">Show the network activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
 
 </resources>
