@@ -71,4 +71,11 @@
     <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
     <string name="network_traffic_refresh_interval_title">Refresh interval</string>
 
+    <!-- Brightness slider -->
+    <string name="qs_show_brightness_title">Brightness slider</string>
+    <string name="qs_show_brightness_summary">Brightness slider visibility and settings</string>
+    <string name="qs_brightness_position_bottom_title">Bottom brightness slider</string>
+    <string name="qs_brightness_position_bottom_summary">Show the brightness slider on the bottom of QS</string>
+    <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
+    <string name="qs_show_auto_brightness_summary">Show an auto brightness toggle near the brightness slider</string>
 </resources>
