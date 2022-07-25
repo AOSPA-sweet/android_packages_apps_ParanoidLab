@@ -14,53 +14,71 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/paranoid_lab_title" >
+    
+    <com.android.settingslib.widget.TopIntroPreference
+            android:key="pa_illustration_desc"
+            android:order="-999"
+            android:title="@string/pa_illustration_summary"/>
+
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="pa_illustration"
+            android:order="-998"
+            app:lottie_rawRes="@raw/lab"/>
 
      <Preference
           android:key="statusbar_category"
           android:title="@string/statusbar_title" 
+          android:summary="@string/statusbar_settings_summary"
           android:fragment="com.aospa.lab.fragments.StatusBarSettings"
 	      settings:layout="@layout/top_level_card"
-          android:icon="@drawable/ic_settings_statusbar"/>
+          android:icon="@drawable/pa_settings_statusbar"/>
           
   <Preference
           android:key="quicksettings_category"
           android:title="@string/quicksettings_title" 
+          android:summary="@string/qs_panel_settings_summary"
           android:fragment="com.aospa.lab.fragments.QuickSettings"
 	      settings:layout="@layout/top_level_card"
-          android:icon="@drawable/ic_settings_quicksettings"/>
+          android:icon="@drawable/pa_settings_quicksettings"/>
           
   <Preference
             android:key="gestures_category"
             android:title="@string/gestures_title"
+            android:summary="@string/gesture_settings_summary"
             android:fragment="com.android.settings.gestures.GestureSettings"
             settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"
             settings:layout="@layout/top_level_card"
-            android:icon="@drawable/ic_settings_gestures"/>
+            android:icon="@drawable/pa_settings_gestures"/>
             
-  <Preference
+  <PreferenceScreen
         android:key="gaming_category"
-        android:icon="@drawable/ic_gaming"
+        android:icon="@drawable/pa_settings_gamespace"
         android:title="@string/game_space_title"
+        android:summary="@string/game_space_summary"
         settings:layout="@layout/top_level_card" >
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="io.chaldeaprjkt.gamespace"
                 android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+   </PreferenceScreen>
 
    <Preference
           android:key="lockscreen_category"
           android:title="@string/lockscreen_title" 
+          android:summary="@string/lockscreen_settings_summary"
           android:fragment="com.aospa.lab.fragments.LockScreenSettings"
 	      settings:layout="@layout/top_level_card"
-          android:icon="@drawable/ic_settings_lockscreens"/>
+          android:icon="@drawable/pa_settings_lockscreens"/>
           
     <Preference
           android:key="misc_category"
           android:title="@string/misc_title"
+          android:summary="@string/misc_settings_summary"
           android:fragment="com.aospa.lab.fragments.MiscSettings"
 	      settings:layout="@layout/top_level_card"
-          android:icon="@drawable/ic_settings_miscs"/>      
+          android:icon="@drawable/pa_settings_miscs"/>      
 
 </PreferenceScreen>

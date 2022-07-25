@@ -16,9 +16,16 @@
 
     <!-- Categories -->
     <string name="lockscreen_title">Lock screen</string>
+    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
     <string name="misc_title">Miscellaneous</string>
+    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
     <string name="quicksettings_title">Quick Settings</string>
+    <string name="qs_panel_settings_summary">Media artwork, Brightness slider, etc</string>
     <string name="statusbar_title">Status bar</string>
+    <string name="statusbar_settings_summary">Network traffic, Battery styles, etc</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="gesture_settings_summary">Customize android gesture</string>
+    <string name="pa_illustration_summary">Everythings you Need!</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
